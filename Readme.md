@@ -62,6 +62,42 @@ Each finding is tagged with a severity level:
 - **MEDIUM**: Misconfigurations such as missing security headers or open ports.
 - **LOW**: Informational exposures like accessible `robots.txt`.
 
+  ## Project Architecture
+
+The Automated Security Testing Tool follows a modular architecture to perform automated security analysis on web applications.
+
+Workflow:
+
+User Input (Target URL)
+        │
+        ▼
+CLI Interface
+        │
+        ▼
+Reconnaissance Module
+- Server technology detection
+- Port scanning
+- Subdomain enumeration
+
+        │
+        ▼
+Security Checks
+- Security header analysis
+- HTTPS enforcement validation
+
+        │
+        ▼
+Vulnerability Testing
+- Reflected XSS detection
+- IDOR parameter manipulation testing
+- Sensitive file exposure detection
+
+        │
+        ▼
+Reporting Module
+- Color-coded CLI output
+- JSON vulnerability report generation
+
 ### Usage Instructions
 
 Install dependencies (preferably in a virtual environment):
