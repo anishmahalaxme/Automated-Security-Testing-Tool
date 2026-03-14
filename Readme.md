@@ -62,46 +62,38 @@ Each finding is tagged with a severity level:
 - **MEDIUM**: Misconfigurations such as missing security headers or open ports.
 - **LOW**: Informational exposures like accessible `robots.txt`.
 
-  ## Project Architecture
+ ## Project Architecture
+
+```text
 User Input (Target URL)
-│
-▼
+        │
+        ▼
 CLI Interface
-│
-▼
+        │
+        ▼
 Reconnaissance Module
+  - Server technology detection
+  - Port scanning
+  - Subdomain enumeration
 
-Server technology detection
-
-Port scanning
-
-Subdomain enumeration
-
-│
-▼
+        │
+        ▼
 Security Checks
+  - Security header analysis
+  - HTTPS enforcement validation
 
-Security header analysis
-
-HTTPS enforcement validation
-
-│
-▼
+        │
+        ▼
 Vulnerability Testing
+  - Reflected XSS detection
+  - IDOR parameter manipulation testing
+  - Sensitive file exposure detection
 
-Reflected XSS detection
-
-IDOR parameter manipulation testing
-
-Sensitive file exposure detection
-
-│
-▼
+        │
+        ▼
 Reporting Module
-
-Color-coded CLI output
-
-JSON vulnerability report generation
+  - Color-coded CLI output
+  - JSON vulnerability report generation
      
 ### Usage Instructions
 
