@@ -1,0 +1,29 @@
+{
+  "target": "http://localhost:3000",
+  "scan_time": "2026-03-14T11:37:10.736534+00:00",
+  "vulnerabilities": [
+    {
+      "type": "Open Port",
+      "severity": "MEDIUM",
+      "details": {
+        "port": "445",
+        "message": "Port 445 open (SMB file sharing exposed)"
+      }
+    },
+    {
+      "type": "Open Port",
+      "severity": "MEDIUM",
+      "details": {
+        "port": "3306",
+        "message": "Port 3306 open (MySQL database exposed)"
+      }
+    }
+  ],
+  "stats": {
+    "high": 0,
+    "medium": 2,
+    "low": 0,
+    "total": 2,
+    "duration_seconds": 861.869396
+  }
+}
