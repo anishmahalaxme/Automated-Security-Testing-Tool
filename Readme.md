@@ -75,29 +75,29 @@ CLI Interface
         │
         ▼
 Reconnaissance Module
-- Server technology detection
-- Port scanning
-- Subdomain enumeration
+   - Server technology detection
+   - Port scanning
+   - Subdomain enumeration
 
         │
         ▼
 Security Checks
-- Security header analysis
-- HTTPS enforcement validation
+   - Security header analysis
+   - HTTPS enforcement validation
 
         │
         ▼
 Vulnerability Testing
-- Reflected XSS detection
-- IDOR parameter manipulation testing
-- Sensitive file exposure detection
+   - Reflected XSS detection
+   - IDOR parameter manipulation testing
+   - Sensitive file exposure detection
 
         │
         ▼
 Reporting Module
-- Color-coded CLI output
-- JSON vulnerability report generation
-
+   - Color-coded CLI output
+   - JSON vulnerability report generation
+     
 ### Usage Instructions
 
 Install dependencies (preferably in a virtual environment):
@@ -109,7 +109,7 @@ pip install -r requirements.txt
 Run a scan against a target:
 
 ```bash
-python cli/main.py scan http://example.com
+python security_scanner/cli/main.py scan http://example.com
 ```
 
 ### Example Output
