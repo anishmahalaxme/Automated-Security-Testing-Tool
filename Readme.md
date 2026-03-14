@@ -94,6 +94,7 @@ Vulnerability Testing
 Reporting Module
   - Color-coded CLI output
   - JSON vulnerability report generation
+```
      
 ### Usage Instructions
 
