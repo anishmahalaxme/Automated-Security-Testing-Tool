@@ -1,4 +1,4 @@
-Automated Security Testing Software
+Automated Security Testing Tool
 ===================================
 
 ### Project Overview
